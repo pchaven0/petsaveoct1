@@ -1,0 +1,312 @@
+/* For Navbar */
+nav {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .logo {
+    color: white;
+  }
+  
+  .text-primary {
+    color: lime; 
+  }
+  
+  /* Navigation Links */
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0.5rem;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ddd;
+  }
+  
+  /* Hamburger Menu Styling */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 4px 0;
+    transition: all 0.3s;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul li {
+      margin: 1rem 0;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    /* Display menu when active */
+    nav.active ul {
+      display: flex;
+    }
+  }
+
+/* main homepage */
+body {
+    background-image: url('petsbg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    justify-content: center;
+    height: 100vh;
+} 
+
+.txthm h1 {
+    color: aliceblue;
+    margin-top: 20%;
+    text-align: center;
+    justify-content: center;
+}
+
+.txthm p {
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* For floating button on home */
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button.find_pets {
+    background: rgb(255, 0, 140);
+    border: 1px solid rgb(255, 0, 160);
+}
+
+button.learn_more {
+    background: rgb(21, 255, 0);
+    border: 1px solid rgb(29, 216, 12);
+}
+
+button {
+    margin: 15px;
+    width: 140px;
+    height: 50px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .7px;
+    background-image: linear-gradient(top, 1px, #ffffff89 1px, #0000001a 100%);
+    box-shadow: 0 60px 12px -18px rgba(0,0,0,0.1), 0 60px 20px -12px rgba(0,0,0,0.1);
+}
+
+
+/* For Service page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.service {
+    background: linear-gradient(45deg, blueviolet, lightgreen);
+    padding: 15px 9%;
+    padding-bottom: 90px;
+}
+
+.service .heading {
+    text-align: center;
+    padding-bottom: 15px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.service .box-service {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+
+.service .box-service .box {
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.service .box-service .box img {
+    height: 80px;
+}
+
+.service .box-service .box h3 {
+    color: #444;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.service .box-service .box p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.service .box-service .box .btn {
+    margin-top: 10px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.service .box-service .box .btn:hover {
+    letter-spacing: 1px;
+}
+
+.service .box-service .box:hover {
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    .service {
+        padding: 20px;
+    }
+}
+
+/* FAQ Section with Grid Layout */
+.faq-section {
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: linear-gradient(45deg, greenyellow, purple);
+    width: 50px;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+}
+
+/* Main Heading */
+.faq-section h1 {
+    text-align: center;
+    color: #222;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
+
+/* FAQ Grid */
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Each FAQ Item */
+.faq-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.faq-item h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+}
+
+.faq-item p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.faq-item a {
+    color: #0073e6;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.faq-item a:hover {
+    color: #005bb5;
+}
+
+/* Responsiveness*/
+@media (max-width: 768px) {
+    .faq-section {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .faq-item h2 {
+        font-size: 20px;
+    }
+
+    .faq-item p {
+        font-size: 15px;
+    }
+}

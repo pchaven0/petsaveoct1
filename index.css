@@ -1,0 +1,36 @@
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer ul.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+  justify-content: center;
+  text-align: center;
+}
+
+footer ul.social-icons .lif {
+  display: inline;
+  margin: 0 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+footer ul.social-icons .lif a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul.social-icons .lif a:hover {
+  color: #f4f4f4;
+}
